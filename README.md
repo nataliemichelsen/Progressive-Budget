@@ -62,7 +62,9 @@ This was a solo project for a UofU Coding Bootcamp, but credit must also be note
 
 ## 🔒 **Installation**
 
-Please do not clone this repo.
+Run npm i and npm i seed in your terminal. 
+
+Feel free to clone this repo at your leisure. 
 
 ## 📂 **Tests**
 
