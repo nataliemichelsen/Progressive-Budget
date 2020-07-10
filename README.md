@@ -1,5 +1,7 @@
 # Progressive-Budget
 
+**To see this site live on Heroku, click [here]().**
+
 ## **Table of Contents**
 
 * Project Description
@@ -19,19 +21,19 @@ This application is a user-focused budget tracker.
 
 ## 💡 **Assignment Instructions**
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+- [x] Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+- [x] The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
 Offline Functionality:
 
-  * Enter deposits offline
+  * - [x] Enter deposits offline
 
-  * Enter expenses offline
+  * - [x] Enter expenses offline
 
 When brought back online:
 
-  * Offline entries should be added to tracker.
+  * - [x] Offline entries should be added to tracker.
 
 ## 📌 **Assignment Requirements**
 
