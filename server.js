@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 // port - ✓
+// added process.env
 const PORT = process.env.PORT || 3000;
 
 // express app - ✓
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // mongoose connect - ✓
+// rearranged a few items & added URI
 mongoose.connect(
   process.env.MONGODB_URI || `mongodb://localhost/budget`,
   { useNewUrlParser: true }
@@ -29,6 +31,7 @@ mongoose.connect(
 app.use(require("./routes/api.js"));
 
 // listening - ✓
+// added url
 app.listen(PORT, () => {
   console.log(`App running on port http://localhost:${PORT}!`);
 });
