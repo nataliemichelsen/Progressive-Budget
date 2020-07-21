@@ -5,9 +5,20 @@ let db;
 const index = indexedDB.open('budget, 1');
 
 // index events
-index.onupgradeneeded
-index.onsuccess
-index.onerror
+// 
+index.onupgradeneeded = event => {
+
+}
+
+// 
+index.onsuccess = event => {
+
+}
+
+// 
+index.onerror = event => {
+    
+}
 
 // run a check to make sure there is data in the indexedDB
 function runCheck() {
