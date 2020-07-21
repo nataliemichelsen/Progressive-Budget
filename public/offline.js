@@ -1,10 +1,10 @@
-// db variable
+// db variable - ✓
 let db;
 
-// index variable
+// index variable - ✓
 const index = indexedDB.open('budget, 1');
 
-// index events
+// index events - ✓
 // creating object store & db
 index.onupgradeneeded = event => {
     const db = event.target.result;
@@ -21,7 +21,7 @@ index.onerror = event => {
     console.log(`ERROR: $(event.target.errorCode)`)
 }
 
-// run a check to make sure there is data in the indexedDB
+// run a check to make sure there is data in the indexedDB - ✓
 function runCheck() {
     const transaction = db.transaction(['pending'], ['readwrite']);
     const store = transaction.objectStore('pending');
@@ -43,7 +43,7 @@ function runCheck() {
     }
 }
 
-// save a record of the transaction
+// save a record of the transaction - ✓
 function saveRecord(data) {
     const transaction = db.transaction(['pending'], ['readwrite']);
     const store = transaction.objectStore('pending');
