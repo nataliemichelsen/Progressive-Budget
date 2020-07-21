@@ -2,6 +2,7 @@
 body {
   font-size: 120%;
   font-family: Arial;
+  background-color: silver;
 }
 
 button, input {
@@ -36,6 +37,11 @@ tr:nth-child(even) {
 .total {
   font-size: 150%;
   text-decoration: underline;
+  background-color: red;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  padding: 14px;
 }
 
 .form {
@@ -49,4 +55,22 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+
+.h1 {
+  background-color: red;
+}
+
+.i1 {
+  background-color: silver;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+}
+
+.b1 {
+  background-color: red;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
 }
