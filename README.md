@@ -72,4 +72,4 @@ There are currently no tests for this app.
 
 ## **Video of Deployed Application**
 
-![Deployed Application]()
+![Deployed Application](images/working_app.gif)
