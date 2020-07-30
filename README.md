@@ -1,6 +1,6 @@
 # Progressive-Budget
 
-**To see this site live on Heroku, click [here]().**
+**To see this site live on Heroku, click [here](https://natalie-budget.herokuapp.com/).**
 
 ## **Table of Contents**
 
@@ -62,9 +62,9 @@ This was a solo project for a UofU Coding Bootcamp, but credit must also be note
 
 ## 🔒 **Installation**
 
-Run npm i and npm i seed in your terminal. 
+Run npm i in your terminal to retrieve necessary node modules. 
 
-Feel free to clone this repo at your leisure. 
+Please do not clone this repo. 
 
 ## 📂 **Tests**
 
@@ -72,4 +72,4 @@ There are currently no tests for this app.
 
 ## **Video of Deployed Application**
 
-![Deployed Application]()
+![Deployed Application](images/working_app.gif)
