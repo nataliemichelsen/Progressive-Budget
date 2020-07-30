@@ -1,3 +1,10 @@
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
+
 // db variable - ✓
 let db;
 
@@ -6,14 +13,17 @@ const index = indexedDB.open('budget, 1');
 
 // index events - ✓
 // creating object store & db
-index.onupgradeneeded = event => {
-    const db = event.target.result;
+index.onupgradeneeded = ({target}) => {
+    let db = target.result;
     db.createObjectStore('pending', { autoIncrement: true });
 }
 
 // targeting event result
-index.onsuccess = event => {
-    db = event.target.result;
+index.onsuccess = ({target}) => {
+    db = target.result;
+    if (navigator.onLine) {
+    runCheck()
+    }
 }
 
 // delivering error message if triggered
